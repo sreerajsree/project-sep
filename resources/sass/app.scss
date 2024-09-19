@@ -1,0 +1,76 @@
+/* ==================== Google Fonts - Lato ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+// Variables
+@import 'variables';
+@import "main";
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+/* ==================== Variables CSS ==================== */
+:root {
+  --header-height: 3.5rem;
+
+  /* ========== Colors ==========  */
+  /* Color mode hsl(hue, saturation, lightness) */
+
+  --first-color: hsl(220, 68%, 54%);
+  --first-color-light: hsl(220, 68%, 97%);
+  --title-color: hsl(220, 48%, 28%);
+  --text-color: hsl(220, 12%, 45%);
+  --body-color: hsl(220, 100%, 99%);
+
+  /* ========== Fonts & Typography ==========  */
+  /* .5rem = 8px || 1rem = 16px */
+
+  --body-font: "Lato", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* ========== Font Weight ==========  */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* ========== z-index ==========  */
+  --tooltip: 5;
+  --fixed: 10;
+}
+
+/* ==================== Responsive Typography ==================== */
+@media screen and (max-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/* ==================== Base CSS ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
