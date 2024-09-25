@@ -9,6 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('contact', [MainController::class, 'contact'])->name('contact');
+Route::post('contact', [MainController::class, 'contactPost'])->name('contact.post');
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
