@@ -27,12 +27,12 @@
                         <h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
-                                    href="../about-naologic.html"></i>Privacy Policy</a></li>
-                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href=""></i>
+                                    href="{{ route('privacy') }}"></i>Privacy Policy</a></li>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="{{ route('terms') }}"></i>
                                     Terms for Use of Website</a></li>
-                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href=""></i>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="{{ route('disclaimer') }}"></i>
                                     Disclaimer</a></li>
-                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href=""></i>
+                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="{{ route('contact') }}"></i>
                                     Contact Us</a></li>
                         </ul>
                     </div>

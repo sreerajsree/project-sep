@@ -18,9 +18,11 @@
 
 <body>
     @include('includes.header')
-    
-    @yield('content')
-
+  
+    <div class="pt-5">
+        @yield('content')
+    </div>
+  
     @include('includes.footer')
 
     <!-- =============== Main =============== -->
@@ -29,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    @stack('scripts')
     <script>
         $(document).ready(function($) {
             $('.count-number').counterUp({

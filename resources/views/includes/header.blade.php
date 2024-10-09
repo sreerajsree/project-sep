@@ -1,7 +1,7 @@
 <header class="header" id="header">
     <nav class="nav container">
         <div class="nav__data">
-            <a href="#" class="nav__logo">
+            <a href="/" class="nav__logo">
                 <img src="https://www.mankindpharma.com/assets/img/logo.png" alt="">
             </a>
 
@@ -24,89 +24,59 @@
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-flashlight-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Most Viewed Courses</span>
-
+                                <img src="https://www.mankindpharma.com/assets/img/m-img.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="dropdown__group">
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        <a href="{{ route('company') }}" class="dropdown__link">Our Company</a>
                                     </li>
-
                                     <li>
-                                        <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        <a href="#" class="dropdown__link">Heritage</a>
                                     </li>
-
                                     <li>
-                                        <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        <a href="#" class="dropdown__link">Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Our Brands</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Our Products</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-heart-3-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Popular Courses</span>
-
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Development with Flutter</a>
+                                        <a href="#" class="dropdown__link">Manufacturing</a>
                                     </li>
 
                                     <li>
-                                        <a href="#" class="dropdown__link">Web Development with Flutter</a>
+                                        <a href="{{ route('quality')}}" class="dropdown__link">Quality</a>
                                     </li>
 
                                     <li>
-                                        <a href="#" class="dropdown__link">Backend Development Expert</a>
+                                        <a href="#" class="dropdown__link">Partnership</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Awards & Recognition</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-bookmark-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Careers</span>
-
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Web Development</a>
+                                        <a href="#" class="dropdown__link">Enviornment, Health and Safety</a>
                                     </li>
 
                                     <li>
-                                        <a href="#" class="dropdown__link">Applications Development</a>
+                                        <a href="#" class="dropdown__link">Kind Care</a>
                                     </li>
 
                                     <li>
-                                        <a href="#" class="dropdown__link">UI/UX Design</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Information Security</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-file-paper-2-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Certifications</span>
-
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="#" class="dropdown__link">Paid Certifications</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Free Certifications</a>
+                                        <a href="#" class="dropdown__link">Our Initiatives</a>
                                     </li>
                                 </ul>
                             </div>

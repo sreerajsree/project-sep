@@ -22,4 +22,33 @@ class MainController extends Controller
         flash()->success('We will get back to you');
         return redirect()->route('contact');
     }
+
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
+    public function terms()
+    {
+        return view('pages.terms');
+    }
+    public function disclaimer()
+    {
+        return view('pages.disclaimer');
+    }
+    public function company()
+    {
+        return view('pages.company');
+    }
+    public function management()
+    {
+        return view('pages.management');
+    }
+    public function quality()
+    {
+        return view('pages.quality');
+    }
+    public function gallery()
+    {
+        return view('pages.media-gallery');
+    }
 }
