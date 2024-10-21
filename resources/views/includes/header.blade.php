@@ -35,7 +35,7 @@
                                         <a href="#" class="dropdown__link">Heritage</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Management</a>
+                                        <a href="{{ route('management') }}" class="dropdown__link">Management</a>
                                     </li>
                                     <li>
                                         <a href="#" class="dropdown__link">Our Brands</a>
@@ -93,63 +93,15 @@
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-code-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Web Templates</span>
-
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="#" class="dropdown__link">Free Templates</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Paid Templates</a>
-                                    </li>
-                                </ul>
+                                <img src="https://www.mankindpharma.com/assets/img/menu-media-gallery.jpg" class="img-fluid" alt="">
                             </div>
-
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-pen-nib-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Designs</span>
-
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Web Design</a>
+                                        <a href="{{ route('gallery') }}" class="dropdown__link">Media Gallery</a>
                                     </li>
-
                                     <li>
-                                        <a href="#" class="dropdown__link">App Design</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Component Design</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-apps-2-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Others</span>
-
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="#" class="dropdown__link">Recent Blogs</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Tutorial Videos</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Webinar</a>
+                                        <a href="#" class="dropdown__link">Press Release</a>
                                     </li>
                                 </ul>
                             </div>
@@ -165,41 +117,24 @@
                     <div class="dropdown__container">
                         <div class="dropdown__content">
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-community-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">About Us</span>
-
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="#" class="dropdown__link">About Us</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Support</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="dropdown__link">Contact Us</a>
-                                    </li>
-                                </ul>
+                                <img src="https://www.mankindpharma.com/assets/img/menu-r-and-d.jpg" class="img-fluid" alt="">
                             </div>
-
                             <div class="dropdown__group">
-                                <div class="dropdown__icon">
-                                    <i class="ri-shield-line"></i>
-                                </div>
-
-                                <span class="dropdown__title">Safety & Quality</span>
-
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Cookie Settings</a>
+                                        <a href="{{ route('research.development') }}" class="dropdown__link">Overview</a>
                                     </li>
-
                                     <li>
-                                        <a href="#" class="dropdown__link">Privacy Policy</a>
+                                        <a href="{{ route('active.pharmaceutical.ingredients') }}" class="dropdown__link">Active Pharmaceuticals Ingredients</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('formulation.research.development') }}" class="dropdown__link">Formulation Research & Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('analytical.research.development') }}" class="dropdown__link">Analytical Research & Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('ipr') }}" class="dropdown__link">IPR</a>
                                     </li>
                                 </ul>
                             </div>
@@ -207,10 +142,10 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="nav__link">Careers</a>
+                    <a href="{{ route('careers') }}" class="nav__link">Careers</a>
                 </li>
                 <li>
-                    <a href="#" class="nav__link">Blog</a>
+                    <a href="{{ route('blog') }}" class="nav__link">Blog</a>
                 </li>
                 <li>
                     <a href="#" class="nav__link"><i class="ri-search-line"></i></a>
