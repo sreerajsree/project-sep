@@ -57,7 +57,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="#" class="dropdown__link">Partnership</a>
+                                        <a href="{{ route('partnership') }}" class="dropdown__link">Partnership</a>
                                     </li>
                                     <li>
                                         <a href="#" class="dropdown__link">Awards & Recognition</a>
@@ -101,7 +101,7 @@
                                         <a href="{{ route('gallery') }}" class="dropdown__link">Media Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Press Release</a>
+                                        <a href="{{ route('press') }}" class="dropdown__link">Press Release</a>
                                     </li>
                                 </ul>
                             </div>

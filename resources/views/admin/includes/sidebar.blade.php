@@ -30,19 +30,24 @@
             <span>Blog</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('admin.blogs') }}">
+        <a class="nav-link" href="{{ route('admin.gallery') }}">
             <i class="fas fa-fw fa-image"></i>
             <span>Gallery</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('admin.blogs') }}">
+        <a class="nav-link" href="{{ route('admin.press') }}">
             <i class="fas fa-fw fa-newspaper"></i>
             <span>Press Release</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('admin.blogs') }}">
+        <a class="nav-link" href="{{ route('admin.careers') }}">
             <i class="fas fa-fw fa-user"></i>
             <span>Careers</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.partnership') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Partnership</span></a>
     </li>
 
     <!-- Divider -->

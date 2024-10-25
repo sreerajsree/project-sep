@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Blog;
+use App\Models\Gallery;
+use App\Models\Press;
+use App\Models\Partnership;
 
 class MainController extends Controller
 {
@@ -50,7 +53,8 @@ class MainController extends Controller
     }
     public function gallery()
     {
-        return view('pages.media-gallery');
+        $data = Gallery::orderBy('id', 'desc')->get();
+        return view('pages.media-gallery', compact('data'));
     }
     public function careers()
     {
@@ -72,10 +76,36 @@ class MainController extends Controller
     {
         return view('pages.formulation-research-development');
     }
+    public function partnership()
+    {
+        return view('pages.partnership');
+    }
+
+    public function partnershipStore(Request $request) {
+
+        $partnership = new Partnership();
+        $partnership->companyname = $request->companyname;
+        $partnership->subject = $request->subject;
+        $partnership->address = $request->address;
+        $partnership->country = $request->country;
+        $partnership->department = $request->department;
+        $partnership->contactperson = $request->contactperson;
+        $partnership->telephone = $request->telephone;
+        $partnership->email = $request->email;
+        $partnership->website = $request->website;
+        $partnership->brief = $request->brief;
+        $partnership->save();
+
+        flash()->success('We will get back to you');
+
+        return redirect()->route('partnership');
+    }
+
     public function ipr()
     {
         return view('pages.ipr');
     }
+
     public function blog()
     {
         $data = Blog::orderBy('id','desc')->get();
@@ -83,10 +113,24 @@ class MainController extends Controller
         return view('pages.blog', compact('data'));
     }
 
+    public function press()
+    {
+        $data = Press::orderBy('id','desc')->get();
+
+        return view('pages.press', compact('data'));
+    }
+
     public function blogDetail($slug){
        
         $data = Blog::where('slug', $slug)->first();
 
         return view('pages.blogview', compact('data'));
+    }
+
+    public function pressDetail($slug){
+       
+        $data = Press::where('slug', $slug)->first();
+
+        return view('pages.pressview', compact('data'));
     }
 }

@@ -18,64 +18,18 @@
             </ol>
         </nav>
         <h1 class="display-2 my-5">Media Gallery</h1>
-        <div  class="cd__intro">
+        <div class="cd__intro">
             <div class="photo-gallery">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 gallery-grid">
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/251/1200/800.webp">
-                                <img src="https://picsum.photos/id/251/480/320.webp" class="img-fluid"
-                                    alt="Lorem ipsum dolor sit amet">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/678/1200/800.webp">
-                                <img src="https://picsum.photos/id/678/480/320.webp" class="img-fluid"
-                                    alt="Ipsum lorem dolor sit amet">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/74/1200/800.webp">
-                                <img src="https://picsum.photos/id/74/480/320.webp" class="img-fluid"
-                                    alt="Dolor lorem ipsum sit amet">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/92/1200/800.webp">
-                                <img src="https://picsum.photos/id/92/480/320.webp" class="img-fluid"
-                                    alt="Sit amet lorem ipsum dolor">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/62/1200/800.webp">
-                                <img src="https://picsum.photos/id/62/480/320.webp" class="img-fluid"
-                                    alt="Aut ipsam deserunt nostrum quo">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/575/1200/800.webp">
-                                <img src="https://picsum.photos/id/575/480/320.webp" class="img-fluid"
-                                    alt="Nulla ex nihil eligendi tempora">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/110/1200/800.webp">
-                                <img src="https://picsum.photos/id/110/480/320.webp" class="img-fluid"
-                                    alt="Nemo perspiciatis voluptatum">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/177/1200/800.webp">
-                                <img src="https://picsum.photos/id/177/480/320.webp" class="img-fluid"
-                                    alt="Accusantium consequuntur modi">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="gallery-item" href="https://picsum.photos/id/197/1200/800.webp">
-                                <img src="https://picsum.photos/id/197/480/320.webp" class="img-fluid"
-                                    alt="Dolore asperiores reprehenderit">
-                            </a>
-                        </div>
+                        @foreach ($data as $item)
+                            <div class="col">
+                                <a class="gallery-item" href="{{ asset('gallery/' . $item->image) }}">
+                                    <img src="{{ asset('gallery/' . $item->image) }}" class="img-fluid"
+                                        alt="{{ $item->image }}">
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

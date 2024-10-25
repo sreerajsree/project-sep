@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Blog;
+use App\Models\Press;
+use App\Models\Gallery;
+use App\Models\Career;
+use App\Models\Partnership;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -52,7 +56,7 @@ class HomeController extends Controller
         $request->validate([
             'name' => 'required',
             'body' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $imageName = time().'.'.$request->image->extension();  
@@ -80,7 +84,7 @@ class HomeController extends Controller
         $request->validate([
             'name' => 'required',
             'body' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $blog = Blog::find($id);
@@ -108,4 +112,213 @@ class HomeController extends Controller
         $blog->delete();
         return redirect()->route('admin.blogs')->with('success', 'Blog deleted successfully.');
     }
+
+    public function press()
+    {
+        $data = Press::all();
+        return view('admin.press.index', compact('data'));
+    }
+
+    public function pressCreate()
+    {
+        return view('admin.press.create');
+    }
+
+    public function pressStore(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'body' => 'required',
+            'image' => 'required|image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $imageName = time().'.'.$request->image->extension();  
+   
+        $request->image->move(public_path('press'), $imageName);
+
+        $press = new Press;
+        $press->name = $request->name;
+        $press->body = $request->body;
+        $press->slug = Str::slug($request->name);
+        $press->image = $imageName;
+        $press->save();
+
+        return redirect()->route('admin.press')->with('success', 'Press Release created successfully.');
+    }
+
+    public function pressEdit($id)
+    {
+        $press = Press::find($id);
+        return view('admin.press.edit', compact('press'));
+    }
+    
+    public function pressUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required',
+            'body' => 'required',
+            'image' => 'image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $press = Press::find($id);
+
+        if ($request->hasFile('image')) {
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('press'), $imageName);
+            $press->image = $imageName;
+        }
+
+        $press->name = $request->name;
+        $press->body = $request->body;
+        $press->slug = Str::slug($request->name);
+        $press->save();
+
+        return redirect()->route('admin.press')->with('success', 'Press Release updated successfully.');
+    }
+    public function pressDelete($id)
+    {
+        $press = Press::find($id);
+        $image_path = "press/".$press->image; 
+        if (file_exists($image_path)) {
+            @unlink($image_path);
+        }
+        $press->delete();
+        return redirect()->route('admin.press')->with('success', 'Press Release deleted successfully.');
+    }
+
+    public function gallery()
+    {
+        $data = Gallery::all();
+        return view('admin.gallery.index', compact('data'));
+    }
+
+    public function galleryCreate()
+    {
+        return view('admin.gallery.create');
+    }
+
+    public function galleryStore(Request $request)
+    {
+        $request->validate([
+            'image' => 'required|image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $imageName = time().'.'.$request->image->extension();
+
+        $request->image->move(public_path('gallery'), $imageName);
+
+        $gallery = new Gallery;
+        $gallery->image = $imageName;
+        $gallery->save();
+
+        return redirect()->route('admin.gallery')->with('success', 'Image created successfully.');
+    }
+
+    public function galleryEdit($id)
+    {
+        $gallery = Gallery::find($id);
+        return view('admin.gallery.edit', compact('gallery'));
+    }
+    
+    public function galleryUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'image' => 'image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $blog = Blog::find($id);
+
+        if ($request->hasFile('image')) {
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('gallery'), $imageName);
+            $blog->image = $imageName;
+        }
+
+        $blog->save();
+
+        return redirect()->route('admin.gallery')->with('success', 'Image updated successfully.');
+    }
+
+    public function galleryDelete($id)
+    {
+        $gallery = Gallery::find($id);
+        $image_path = "gallery/".$gallery->image;
+        if (file_exists($image_path)) {
+            @unlink($image_path);
+        }
+        $gallery->delete();
+        return redirect()->route('admin.gallery')->with('success', 'Image deleted successfully.');
+    }
+
+
+    public function careers()
+    {
+        $data = Career::all();
+        return view('admin.careers.index', compact('data'));
+    }
+
+    public function careerCreate()
+    {
+        return view('admin.careers.create');
+    }
+
+    public function careerStore(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        $career = new Career;
+        $career->name = $request->name;
+        $career->location = $request->location;
+        $career->salary = $request->salary;
+        $career->time = $request->time;
+        $career->description = $request->description;
+        $career->save();
+
+        return redirect()->route('admin.careers')->with('success', 'Job added successfully.');
+    }
+
+    public function careerEdit($id)
+    {
+        $careers = Career::find($id);
+        return view('admin.careers.edit', compact('careers'));
+    }
+
+    public function careerUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        $career = Career::find($id);
+        $career->name = $request->name;
+        $career->location = $request->location;
+        $career->salary = $request->salary;
+        $career->time = $request->time;
+        $career->description = $request->description;
+        $career->save();
+
+        return redirect()->route('admin.careers')->with('success', 'Job updated successfully.');
+    }
+
+    public function careerDelete($id)
+    {
+        $career = Career::find($id);
+        $career->delete();
+        return redirect()->route('admin.careers')->with('success', 'Job deleted successfully.');
+    }
+
+    public function partnership()
+    {
+        $data = Partnership::all();
+        return view('admin.partnerships.index', compact('data'));
+    }
+
+    public function partnershipDelete($id) {
+        $partnership = Partnership::find($id);
+        $partnership->delete();
+        return redirect()->route('admin.partnership')->with('success', 'Partnership deleted successfully.');}
 }
