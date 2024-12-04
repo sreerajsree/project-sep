@@ -5,15 +5,16 @@
 
 @endpush
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/life-@-mankind-banner-1557150925.jpg" class="img-fluid"
             alt="">
+            <h1>Careers</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Careers</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/careers">Careers</a></li>
             </ol>
         </nav>
         <div>
@@ -22,7 +23,7 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="career-search mb-60">
                         <div class="filter-result">
-                            <p class="mb-30 ff-montserrat">Total Job Openings : 89</p>
+                            <p class="mb-30 ff-montserrat">Total Job Openings : {{ count($data) }}</p>
                             
                             @for ($i = 0; $i < 5; $i++)
                             <div class="job-box d-md-flex align-items-center justify-content-between mb-30">

@@ -4,10 +4,8 @@
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css">
 @endpush
 @section('content')
-    <div class="py-5">
-
-    </div>
-    <div class="container">
+    <div class="container py-5">
+        <h1 class="display-2 my-5">Blog</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -15,11 +13,10 @@
             </ol>
         </nav>
         <div class="mb-5">
-            <h1 class="display-2 my-5">Blog</h1>
             <div class="container overflow-hidden">
                 <div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
                     @foreach ($data as $d)
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <article>
                                 <div class="card border-0 bg-transparent">
                                     <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">

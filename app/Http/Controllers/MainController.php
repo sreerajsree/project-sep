@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Blog;
 use App\Models\Gallery;
+use App\Models\Career;
 use App\Models\Press;
 use App\Models\Partnership;
 
@@ -51,6 +52,10 @@ class MainController extends Controller
     {
         return view('pages.quality');
     }
+    public function initiatives()
+    {
+        return view('pages.initiatives');
+    }
     public function gallery()
     {
         $data = Gallery::orderBy('id', 'desc')->get();
@@ -58,7 +63,8 @@ class MainController extends Controller
     }
     public function careers()
     {
-        return view('pages.careers');
+        $data = Career::orderBy('id', 'desc')->get();
+        return view('pages.careers', compact('data'));
     }
     public function researchDevelopment()
     {
@@ -79,6 +85,22 @@ class MainController extends Controller
     public function partnership()
     {
         return view('pages.partnership');
+    }
+    public function environment()
+    {
+        return view('pages.environment');
+    }
+    public function manufacturing()
+    {
+        return view('pages.manufacturing');
+    }
+    public function product()
+    {
+        return view('pages.product');
+    }
+    public function ourBrand()
+    {
+        return view('pages.brand');
     }
 
     public function partnershipStore(Request $request) {

@@ -4,7 +4,7 @@
 <!-- Coding by CodeWithMangesh || (M.B) -->
 
 
-<div class="pt-5"><img class="img-fluid" src="https://www.mankindpharma.com/assets/img/banner1.jpg"
+<div class="pt-5"><img class="img-fluid" src="https://www.mankindpharma.com/assets/img/banner1n.jpg"
     alt="">
 </div>
 <div class="py-3">

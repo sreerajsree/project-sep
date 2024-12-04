@@ -6,18 +6,19 @@
 @endpush
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/media-gallery-banner-1548144146.jpg"
             class="img-fluid" alt="">
+            <h1>Media Gallery</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Media Gallery</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/media-gallery">Media Gallery</a></li>
             </ol>
         </nav>
-        <h1 class="display-2 my-5">Media Gallery</h1>
+        <h1 class="display-2 my-5"></h1>
         <div class="cd__intro">
             <div class="photo-gallery">
                 <div class="container">

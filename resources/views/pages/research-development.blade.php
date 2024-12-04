@@ -2,20 +2,21 @@
 
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/r&d-overview-banner-1548144778.jpg" class="img-fluid"
             alt="">
+            <h1>Research & Development</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Leading Pharma Company in India - Research & Development
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/esearch-development">Leading Pharma Company in India - Research & Development
                         Centre</a></li>
             </ol>
         </nav>
         <div>
-            <h1 class="display-2 my-5">Overview</h1>
+            <h2 class="display-4 fw-bold my-5">Overview</h2>
             <p>
                 Our Company has a dedicated R&D center with Three units located in IMT Manesar, Gurugram, Haryana & One in
                 Mumbai for inhalation products Thane, Maharashtra. One unit of this R&D center is recognized by the DSIR,

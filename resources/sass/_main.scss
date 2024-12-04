@@ -481,6 +481,22 @@
   top: 1px;
 }
 
+.top-banner {
+  position: relative;
+  h1 {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background-color: white;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 200px;
+    font-size: 26px;
+    border: 1px solid rgb(13 110 253);
+    margin: 0;
+  }
+}
+
 .job-overview .overview-bottom,
 .job-overview .overview-top {
   padding: 35px;

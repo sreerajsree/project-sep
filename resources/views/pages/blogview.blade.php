@@ -4,10 +4,7 @@
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css">
 @endpush
 @section('content')
-    <div class="py-5">
-
-    </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>

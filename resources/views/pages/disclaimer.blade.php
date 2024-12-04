@@ -4,7 +4,7 @@
 @section('content')
     <div class="py-5">
         <div class="container">
-            <h1>Disclaimer</h1>
+            <h1 class="text-center">Disclaimer</h1>
             <hr>
             <p>Welcome to [Your Pharma Company Name]'s website. By using our website, you agree to the following terms and conditions:</p>
             

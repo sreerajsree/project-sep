@@ -2,11 +2,12 @@
 
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/formulation-research-development-banner-1556601250.jpg"
             class="img-fluid" alt="">
+            <h1>Formulation Research & Development</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -14,7 +15,7 @@
             </ol>
         </nav>
         <div>
-            <h1 class="display-2 my-5">Formulation Research & Development</h1>
+            <h2 class="display-4 fw-bold my-5">Formulation Research & Development</h2>
             <p>
                 On 31st March 2021, we have filed Investigation new drug application (INDA) for our in-house first in class
                 anti-diabetic molecule. We have successfully completed Phase 1 trials and results are very encouraging.

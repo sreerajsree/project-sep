@@ -2,19 +2,20 @@
 
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/ipr-desktop-banner-1661149485.png"
             class="img-fluid" alt="">
+            <h1>IPR</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">IPR </a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/ipr">IPR </a></li>
             </ol>
         </nav>
         <div>
-            <h1 class="display-2 my-5">IPR</h1>
+            <h2 class="display-4 fw-bold my-5">IPR</h2>
             <p>
                 Our R&D capabilities have led to the development of several innovative pharmaceutical products across
                 various therapeutic areas. Our In-house IPR team is experienced in handling Intellectual Property filing

@@ -2,11 +2,12 @@
 
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/1920x500-1554719066.jpg" class="img-fluid"
             alt="">
+            <h1>Partnership</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -14,7 +15,6 @@
             </ol>
         </nav>
         <div>
-            <h1 class="display-2 my-5">Partnership</h1>
             <div class="row">
                 <div class="col-md-6">
                     <img src="https://www.mankindpharma.com/assets/img/licensing01.jpg" class="img-fluid" alt="">
@@ -32,7 +32,7 @@
                     </p>
                 </div>
             </div>
-            <h2 class="display-2 my-3">Partner with us</h2>
+            <h2 class="display-4 fw-bold my-5">Partner with us</h2>
             <p>We are tapping into the right potential and urge companies to join hands and help us in creating a healthier
                 and happier world.</p>
             <div>

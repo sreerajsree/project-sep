@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css">
 @endpush
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/press-release-d-1691501055.png" class="img-fluid" alt="">
+        <h1>Press Release</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
@@ -15,7 +16,6 @@
             </ol>
         </nav>
         <div class="mb-5">
-            <h1 class="display-2 my-5">Press Release</h1>
             <div class="container overflow-hidden">
                 <div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
                     @foreach ($data as $d)

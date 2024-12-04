@@ -10,15 +10,15 @@
                         <h5 class="mb-4 font-weight-bold text-uppercase">Our Brands</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
-                                    href="">Sales</a></li>
-                            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="">About Us</a></li>
+                            {{-- <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
                                     href="">Workforce</a></li>
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">
                                     E-Commerce</a></li>
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
                                     href="">Finance</a></li>
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
-                                    href="">Business Apps</a></li>
+                                    href="">Business Apps</a></li> --}}
                         </ul>
                     </div>
 

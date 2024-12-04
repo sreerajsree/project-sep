@@ -5,8 +5,8 @@
     <div class="py-5">
         <div class="container">
             <h1 class="text-center">Terms and Conditions</h1>
+            <hr>
             <p>Last updated: [Insert Date]</p>
-
             <h2>1. Introduction</h2>
             <p>Welcome to [Your Company Name] (“us”, “we”, or “our”). These Terms and Conditions outline the rules and
                 regulations for the use of our website and services.</p>

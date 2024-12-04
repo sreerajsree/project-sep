@@ -2,11 +2,12 @@
 
 
 @section('content')
-    <div class="py-5">
+    <div class="top-banner">
         <img src="https://www.mankindpharma.com//media/images/cmspage/image/quality-1554719628.jpg" class="img-fluid"
             alt="">
+            <h1>Quality</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -14,7 +15,6 @@
             </ol>
         </nav>
         <div>
-            <h1 class="display-2 my-5">Quality</h1>
             <p>
                 We are committed to providing quality products to our customers through robust manufacturing practices across our manufacturing sites, encompassing all areas of the business process right from supply chain management to product delivery.
             </p>
@@ -35,35 +35,4 @@
             </p>
         </div>
     </div>
-    <section id="statistic" class="statistic-section one-page-section">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-xs-12 col-md-4">
-                    <div class="counter">
-                        <i class="ri-group-line stats-icon"></i>
-                        <h2 class="timer count-title count-number">999</h2>
-                        <div class="stats-line-black"></div>
-                        <p class="stats-text">EMPLOYEES</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="counter">
-                        <i class="ri-sort-asc stats-icon"></i>
-                        <h2 class="timer count-title count-number">5
-                        </h2>
-                        <div class="stats-line-black"></div>
-                        <p class="stats-text">RANK</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="counter">
-                        <i class="ri-money-dollar-circle-line stats-icon"></i>
-                        <h2 class="timer count-title count-number">10000</h2>
-                        <div class="stats-line-black"></div>
-                        <p class="stats-text">REVENUE</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection

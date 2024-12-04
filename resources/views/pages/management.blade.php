@@ -5,8 +5,9 @@
 @endpush
 
 @section('content')
-<div>
+<div class="top-banner">
     <img src="https://www.mankindpharma.com//media/images/cmspage/image/management-banner-d-1702373210.jpg" class="img-fluid" alt="">
+    <h1>Management</h1>
 </div>
     <div class="bg-light py-5">
         <div class="container">

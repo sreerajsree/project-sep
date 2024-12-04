@@ -32,16 +32,13 @@
                                         <a href="{{ route('company') }}" class="dropdown__link">Our Company</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Heritage</a>
-                                    </li>
-                                    <li>
                                         <a href="{{ route('management') }}" class="dropdown__link">Management</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Our Brands</a>
+                                        <a href="{{ route('our.brand') }}" class="dropdown__link">Our Brands</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Our Products</a>
+                                        <a href="{{ route('product') }}" class="dropdown__link">Our Products</a>
                                     </li>
                                 </ul>
                             </div>
@@ -49,7 +46,7 @@
                             <div class="dropdown__group">
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Manufacturing</a>
+                                        <a href="{{ route('manufacturing') }}" class="dropdown__link">Manufacturing</a>
                                     </li>
 
                                     <li>
@@ -59,24 +56,24 @@
                                     <li>
                                         <a href="{{ route('partnership') }}" class="dropdown__link">Partnership</a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="#" class="dropdown__link">Awards & Recognition</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
 
                             <div class="dropdown__group">
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Enviornment, Health and Safety</a>
+                                        <a href="{{ route('environment') }}" class="dropdown__link">Enviornment, Health and Safety</a>
                                     </li>
 
-                                    <li>
+                                    {{-- <li>
                                         <a href="#" class="dropdown__link">Kind Care</a>
-                                    </li>
+                                    </li> --}}
 
                                     <li>
-                                        <a href="#" class="dropdown__link">Our Initiatives</a>
+                                        <a href="{{ route('initiatives') }}" class="dropdown__link">Our Initiatives</a>
                                     </li>
                                 </ul>
                             </div>
