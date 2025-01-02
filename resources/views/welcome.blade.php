@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="col-md-5">
-        <img class="img-fluid" src="https://www.mankindpharma.com/assets/img/about-banner-1.jpg" alt="">
+        <img class="img-fluid" src="{{ asset('banner/careers.jpg') }}" alt="">
     </div>
 </div>
 </div>
