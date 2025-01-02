@@ -6,7 +6,7 @@
 @endpush
 @section('content')
     <div class="top-banner">
-        <img src="https://www.mankindpharma.com//media/images/cmspage/image/life-@-mankind-banner-1557150925.jpg" class="img-fluid"
+        <img src="{{ asset('banner/careers.webp') }}" class="img-fluid"
             alt="">
             <h1>Careers</h1>
     </div>

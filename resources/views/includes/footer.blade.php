@@ -6,7 +6,7 @@
             </div>
             <div class="col-md-9 col-sm-12">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-6 p-0 float-left mb-3">
+                    <div class="col-md-4 col-sm-6 col-6 float-left mb-3">
                         <h5 class="mb-4 font-weight-bold text-uppercase">Our Brands</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
@@ -23,7 +23,7 @@
                     </div>
 
 
-                    <div class="col-md-4 col-sm-6 col-6 mb-3 p-0 float-left">
+                    <div class="col-md-4 col-sm-6 col-6 mb-3 float-left">
                         <h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 col-6 mb-3 p-0 float-left">
+                    <div class="col-md-4 col-sm-6 col-6 mb-3 float-left">
                         <h5 class="mb-4 font-weight-bold text-uppercase">Connect</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2">
@@ -62,9 +62,17 @@
             </div>
             <div class="col-md-12">
                 <div class="py-4 d-flex justify-content-center align-items-center">
-                    Copyright {{ date('Y') }}
+                    Copyright {{ date('Y') }}. Soteria Pharmaseuticals
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"Talk to us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"911234567890","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+      

@@ -3,19 +3,19 @@
 
 @section('content')
     <div class="top-banner">
-        <img src="https://www.mankindpharma.com//media/images/cmspage/image/1920x500-1554719066.jpg" class="img-fluid"
+        <img src="{{ asset('banner/our-company.webp') }}" class="img-fluid"
             alt="">
         <h1>Overview</h1>
     </div>
-    <div class="container">
+    <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Best Pharmaceutical Companies in India</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/our-company">Best Pharmaceutical Companies in India</a></li>
             </ol>
         </nav>
         <div>
-            <h2 class="display-5">Overview</h2>
+            <h2 class="display-4 fw-bold my-5">Overview</h2>
             <p>
                 Founded in 1991 and commenced operation in 1995, we are India’s fourth largest pharmaceutical company in
                 terms of domestic sales and are engaged in developing, manufacturing and marketing a diverse range of

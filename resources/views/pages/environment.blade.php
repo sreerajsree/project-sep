@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="top-banner">
-        <img src="https://www.mankindpharma.com//media/images/cmspage/image/environment_health_safety_policy-banner-1548140816.jpg"
+        <img src="{{ asset('banner/environment.webp') }}"
             class="img-fluid" alt="">
             <h1>Environment, Health and  Safety Policy</h1>
     </div>

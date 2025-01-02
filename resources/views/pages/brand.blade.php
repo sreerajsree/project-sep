@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="top-banner">
-        <img src="https://www.mankindpharma.com//media/images/cmspage/image/our-brand-banner-1558357933.jpg" class="img-fluid"
+        <img src="{{ asset('banner/our-brand.webp') }}" class="img-fluid"
             alt="">
             <h1>Our Brand</h1>
     </div>

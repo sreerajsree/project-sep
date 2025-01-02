@@ -4,7 +4,7 @@
 <!-- Coding by CodeWithMangesh || (M.B) -->
 
 
-<div class="pt-5"><img class="img-fluid" src="https://www.mankindpharma.com/assets/img/banner1n.jpg"
+<div class="pt-5"><img class="img-fluid" src="{{ asset('banner/banner.webp') }}"
     alt="">
 </div>
 <div class="py-3">
@@ -46,7 +46,7 @@
     <div class="col-md-7">
         <h2 class="display-1">Work With Us</h2>
         <div class="mt-4">
-            <a class="link-dark fs-5" href="">Know More</a>
+            <a class="link-dark fs-5" href="/careers">Know More</a>
         </div>
     </div>
     <div class="col-md-5">

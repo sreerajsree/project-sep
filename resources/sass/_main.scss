@@ -1,7 +1,6 @@
 /* ==================== Reuseable CSS ==================== */
 .container {
     max-width: 1120px;
-    margin-inline: 1.5rem;
   }
   
   /* ====================Header ==================== */
@@ -163,6 +162,9 @@
   .dropdown__group {
     padding-left: 2.5rem;
     row-gap: 0.5rem;
+    @media (max-width: 600px) {
+      padding-left: 1rem;
+   }
   }
   
   .dropdown__group:first-child {
@@ -182,6 +184,15 @@
     font-size: 14px;
     font-weight: 500;
     color: #000;
+  }
+
+  .enquiry-btn {
+    background-color: blue;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #007bff !important;
+    }
   }
   
   .dropdown__list {
@@ -235,9 +246,6 @@
       display: flex;
     }
   
-    .nav__link {
-      padding: 0;
-    }
   
     .nav__link:hover {
       background-color: initial;
@@ -321,15 +329,6 @@
       cursor: initial;
     }
   }
-  
-  @media screen and (min-width: 1152px) {
-    .container {
-      margin-inline: auto;
-    }
-  }
-
-
-
 
 .footer {
     background: #ebf4fa;
@@ -494,6 +493,9 @@
     font-size: 26px;
     border: 1px solid rgb(13 110 253);
     margin: 0;
+    @media (max-width: 600px) {
+     display: none;
+   }
   }
 }
 
