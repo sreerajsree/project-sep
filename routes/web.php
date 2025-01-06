@@ -9,6 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('contact', [MainController::class, 'contact'])->name('contact');
+Route::get('about', [MainController::class, 'about'])->name('about');
 Route::post('contact', [MainController::class, 'contactPost'])->name('contact.post');
 Route::get('privacy', [MainController::class, 'privacy'])->name('privacy');
 Route::get('terms-and-conditions', [MainController::class, 'terms'])->name('terms');

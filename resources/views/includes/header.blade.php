@@ -2,7 +2,7 @@
     <nav class="nav container">
         <div class="nav__data">
             <a href="/" class="nav__logo">
-                <img src="https://www.mankindpharma.com/assets/img/logo.png" alt="">
+                <img src="{{ asset('images/logo.png') }}" alt="Soteria Pharmaceuticals Logo">
             </a>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -14,7 +14,9 @@
         <!-- Nav Menu -->
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-
+                <li>
+                    <a href="{{ route('about') }}" class="nav__link">About</a>
+                </li>
                 <!-- Dropdown 1 -->
                 <li class="dropdown__item">
                     <div class="nav__link dropdown__button">

@@ -2,7 +2,7 @@
     <div class="container pt-5 border-bottom">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3 text-center">
-                <img src="https://www.mankindpharma.com/assets/img/logo.png" alt="">
+                <a href="/  "><img class="footer-logo" src="{{ asset('images/logo.png') }}" alt="Soteria Pharmaceuticals Logo"></a>
             </div>
             <div class="col-md-9 col-sm-12">
                 <div class="row">
@@ -10,7 +10,7 @@
                         <h5 class="mb-4 font-weight-bold text-uppercase">Our Brands</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
-                                    href="">About Us</a></li>
+                                    href="{{ route('about') }}">About Us</a></li>
                             {{-- <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
                                     href="">Workforce</a></li>
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">
@@ -62,7 +62,7 @@
             </div>
             <div class="col-md-12">
                 <div class="py-4 d-flex justify-content-center align-items-center">
-                    Copyright {{ date('Y') }}. Soteria Pharmaseuticals
+                    Copyright {{ date('Y') }}. Soteria Pharmaceuticals Ltd.
                 </div>
             </div>
         </div>

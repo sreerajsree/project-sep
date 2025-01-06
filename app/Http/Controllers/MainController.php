@@ -56,6 +56,10 @@ class MainController extends Controller
     {
         return view('pages.initiatives');
     }
+    public function about()
+    {
+        return view('pages.about');
+    }
     public function gallery()
     {
         $data = Gallery::orderBy('id', 'desc')->get();
