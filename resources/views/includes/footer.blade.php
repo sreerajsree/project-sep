@@ -10,7 +10,7 @@
                         <h5 class="mb-4 font-weight-bold text-uppercase">Our Brands</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
-                                    href="{{ route('about') }}">About Us</a></li>
+                                    href="{{ route('company') }}">About Us</a></li>
                             {{-- <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a
                                     href="">Workforce</a></li>
                             <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="">
@@ -68,11 +68,3 @@
         </div>
     </div>
 </footer>
-<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-        <script>
-          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"Talk to us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"911234567890","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
-          window.onload = () => {
-            _waEmbed(wa_btnSetting);
-          };
-        </script>
-      

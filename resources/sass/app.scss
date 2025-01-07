@@ -16,8 +16,8 @@
 
   --first-color: hsl(220, 68%, 54%);
   --first-color-light: hsl(220, 68%, 97%);
-  --title-color: hsl(220, 48%, 28%);
-  --text-color: hsl(220, 12%, 45%);
+  --title-color: #000;
+  --text-color: #000;
   --body-color: hsl(220, 100%, 99%);
 
   /* ========== Fonts & Typography ==========  */
@@ -77,9 +77,43 @@ a {
 }
 
 .display-4 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 textarea.form-control {
   min-height: 200px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.h2, h2 {
+  font-size: 1.5rem;
+}
+
+.float{
+  position: fixed;
+  z-index: 20000;
+  color: #ffffff;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 7px 96px -2px rgba(154,171,237,1);
+  -webkit-box-shadow: 2px 7px 96px -2px rgba(154,171,237,1);
+  -moz-box-shadow: 2px 7px 96px -2px rgba(154,171,237,1);
+  bottom: 40px;
+  right: 40px;
+  i {
+    font-size: 20px;
+  }
 }

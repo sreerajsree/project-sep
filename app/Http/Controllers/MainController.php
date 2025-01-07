@@ -56,10 +56,6 @@ class MainController extends Controller
     {
         return view('pages.initiatives');
     }
-    public function about()
-    {
-        return view('pages.about');
-    }
     public function gallery()
     {
         $data = Gallery::orderBy('id', 'desc')->get();
@@ -98,9 +94,9 @@ class MainController extends Controller
     {
         return view('pages.manufacturing');
     }
-    public function product()
+    public function ourProduct()
     {
-        return view('pages.product');
+        return view('pages.our-product');
     }
     public function ourBrand()
     {

@@ -9,7 +9,6 @@ Route::get('/', function () {
 });
 
 Route::get('contact', [MainController::class, 'contact'])->name('contact');
-Route::get('about', [MainController::class, 'about'])->name('about');
 Route::post('contact', [MainController::class, 'contactPost'])->name('contact.post');
 Route::get('privacy', [MainController::class, 'privacy'])->name('privacy');
 Route::get('terms-and-conditions', [MainController::class, 'terms'])->name('terms');
@@ -18,9 +17,9 @@ Route::get('our-company', [MainController::class, 'company'])->name('company');
 Route::get('management', [MainController::class, 'management'])->name('management');
 Route::get('quality', [MainController::class, 'quality'])->name('quality');
 Route::get('manufacturing', [MainController::class, 'manufacturing'])->name('manufacturing');
-Route::get('environment', [MainController::class, 'environment'])->name('environment');
+// Route::get('environment', [MainController::class, 'environment'])->name('environment');
 Route::get('our-initiatives', [MainController::class, 'initiatives'])->name('initiatives');
-Route::get('product', [MainController::class, 'product'])->name('product');
+Route::get('our-product', [MainController::class, 'ourProduct'])->name('our.product');
 Route::get('our-brand', [MainController::class, 'ourBrand'])->name('our.brand');
 Route::get('media-gallery', [MainController::class, 'gallery'])->name('gallery');
 Route::get('partnership', [MainController::class, 'partnership'])->name('partnership');

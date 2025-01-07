@@ -11,8 +11,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('product') }}">Best Pharmaceutical Products | Mankind Pharma
-                        Products List</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('our.product') }}">Our Products</a></li>
             </ol>
         </nav>
         <div>
@@ -39,14 +38,7 @@
             </div>
             <div class="py-4">
                 <p>
-                    In our domestic pharmaceuticals business, our product portfolio comprises a broad range of formulations
-                    across various acute and chronic therapeutic areas including anti-infectives, cardiovascular,
-                    gastrointestinal, anti-diabetic, neuro/CNS, vitamins/minerals/nutrients and respiratory.
-                </p>
-                <p class="mt-3">
-                    In our consumer healthcare business, we have established several differentiated brands in the condoms,
-                    pregnancy detection, oral contraceptives, antacid powders, vitamin and mineral supplements and anti-acne
-                    preparations categories.
+                    Soteria’s product portfolio comprises a wide array of medicines and medical devices. Our drug formulations span several therapeutic areas, including oncology, cardiovascular, and neurological.
                 </p>
             </div>
         </div>
