@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <section id="statistic" class="statistic-section one-page-section">
+    {{-- <section id="statistic" class="statistic-section one-page-section">
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-12 col-md-4">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     </div>
     <div class="container-fluid">

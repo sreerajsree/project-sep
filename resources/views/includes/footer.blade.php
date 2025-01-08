@@ -62,7 +62,7 @@
             </div>
             <div class="col-md-12">
                 <div class="py-4 d-flex justify-content-center align-items-center">
-                    Copyright {{ date('Y') }}. Soteria Pharmaceuticals Ltd.
+                    Copyright {{ date('Y') }}. Soteria Pharmaceuticals and Healthcare Pvt. Ltd.
                 </div>
             </div>
         </div>
