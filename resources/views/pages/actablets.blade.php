@@ -2,8 +2,7 @@
 
 @push('seo')
     <title>Anti Cancer Tablets</title>
-    <meta name="description"
-        content="Anti Cancer Tablets" />
+    <meta name="description" content="Anti Cancer Tablets" />
 @endpush
 @section('content')
     <div class="top-banner">
@@ -25,10 +24,12 @@
                             alt="{{ $item['name'] }}">
                         <div class="card-body">
                             <h5 class="card-title text-center">{{ $item['name'] }}</h5>
-                            <a href="{{ route('view.product', $item->slug) }}" class="btn btn-primary d-flex justify-content-center">Read More</a>
+                            <a href="{{ route('view.product', $item->slug) }}"
+                                class="btn btn-primary d-flex justify-content-center">Read More</a>
                         </div>
                     </div>
+                </div>
             @endforeach
         </div>
     </div>
-    @endsection
+@endsection
