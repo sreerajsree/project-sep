@@ -8,6 +8,7 @@ use App\Models\Blog;
 use App\Models\Press;
 use App\Models\Gallery;
 use App\Models\Career;
+use App\Models\Product;
 use App\Models\Partnership;
 use Illuminate\Support\Str;
 
@@ -46,9 +47,20 @@ class HomeController extends Controller
         return view('admin.blog.index', compact('data'));
     }
 
+    public function products()
+    {
+        $data = Product::all();
+        return view('admin.products.index', compact('data'));
+    }
+
     public function blogCreate()
     {
         return view('admin.blog.create');
+    }
+
+    public function productsCreate()
+    {
+        return view('admin.products.create');
     }
 
     public function blogStore(Request $request)
@@ -73,12 +85,43 @@ class HomeController extends Controller
         return redirect()->route('admin.blogs')->with('success', 'Blog created successfully.');
     }
 
+    public function productsStore(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'image' => 'required|image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $imageName = time().'.'.$request->image->extension();  
+        $request->image->move(public_path('products'), $imageName);
+        $product = new Product;
+        $product->category = $request->category;
+        $product->name = $request->name;
+        $product->brand = $request->brand;
+        $product->composition = $request->composition;
+        $product->manufacturer = $request->manufacturer;
+        $product->description = $request->description;
+        $product->slug = Str::slug($request->name);
+        $product->meta_title = $request->meta_title;
+        $product->meta_description = $request->meta_description;
+        $product->image = $imageName;
+        $product->save();
+
+        return redirect()->route('admin.products')->with('success', 'Product created successfully.');
+    }
+
     public function blogEdit($id)
     {
         $blog = Blog::find($id);
         return view('admin.blog.edit', compact('blog'));
     }
     
+    public function productsEdit($id)
+    {
+        $product = Product::find($id);
+        return view('admin.products.edit', compact('product'));
+    }
+
     public function blogUpdate(Request $request, $id)
     {
         $request->validate([
@@ -102,6 +145,36 @@ class HomeController extends Controller
 
         return redirect()->route('admin.blogs')->with('success', 'Blog updated successfully.');
     }
+
+    public function productsUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required',
+            'image' => 'image|mimes:webp,jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $product = Product::find($id);
+
+        if ($request->hasFile('image')) {
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('products'), $imageName);
+            $product->image = $imageName;
+        }
+
+        $product->category = $request->category;
+        $product->name = $request->name;
+        $product->brand = $request->brand;
+        $product->composition = $request->composition;
+        $product->manufacturer = $request->manufacturer;
+        $product->description = $request->description;
+        $product->slug = Str::slug($request->name);
+        $product->meta_title = $request->meta_title;
+        $product->meta_description = $request->meta_description;
+        $product->save();
+
+        return redirect()->route('admin.products')->with('success', 'Product updated successfully.');
+    }
+
     public function blogDelete($id)
     {
         $blog = Blog::find($id);
@@ -111,6 +184,17 @@ class HomeController extends Controller
         }
         $blog->delete();
         return redirect()->route('admin.blogs')->with('success', 'Blog deleted successfully.');
+    }
+
+    public function productsDelete($id)
+    {
+        $product = Product::find($id);
+        $image_path = "products/".$product->image; 
+        if (file_exists($image_path)) {
+            @unlink($image_path);
+        }
+        $product->delete();
+        return redirect()->route('admin.products')->with('success', 'Product deleted successfully.');
     }
 
     public function press()
@@ -310,6 +394,7 @@ class HomeController extends Controller
         $career->delete();
         return redirect()->route('admin.careers')->with('success', 'Job deleted successfully.');
     }
+
 
     public function partnership()
     {

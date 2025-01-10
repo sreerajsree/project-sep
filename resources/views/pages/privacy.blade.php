@@ -1,5 +1,9 @@
 @extends('layouts.main')
-
+@push('seo')
+    <title>Comprehensive Privacy Policy & Data Protection Practices</title>
+    <meta name="description"
+        content="Understand how we prioritize your privacy, collect data responsibly, and ensure compliance with regulations to protect your personal information securely" />
+@endpush
 
 @section('content')
     <div class="py-5">

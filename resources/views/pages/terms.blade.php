@@ -1,5 +1,9 @@
 @extends('layouts.main')
-
+@push('seo')
+    <title>Unlock the Ethics of Accessing Medical Knowledge Online</title>
+    <meta name="description"
+        content="Delve into the terms for responsible use of medical data, safeguarding copyrights, and compliant information sharing within legal frameworks." />
+@endpush
 
 @section('content')
     <div class="py-5">

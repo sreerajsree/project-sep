@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
 @endpush
-
+@push('seo')
+    <title>Contact Us for Expert Pharmaceutical Support | Get in Touch</title>
+    <meta name="description"
+        content="Reach out to us for prompt assistance with pharmaceutical products and services. Contact via phone, email, or our online form. We're here to help!" />
+@endpush
 @section('content')
     <div class="py-5">
         <div class="container mt-5">

@@ -20,6 +20,11 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.products') }}">
+            <i class="fab fa-fw fa-product-hunt"></i>
+            <span>Products</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.contacts') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Contacts</span></a>

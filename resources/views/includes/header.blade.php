@@ -61,14 +61,14 @@
                             <div class="dropdown__group">
                                 <ul class="dropdown__list">
                                     <li>
-                                        <a href="#" class="dropdown__link">Anti Cancer Capsules</a>
+                                        <a href="{{ route('accapsules') }}" class="dropdown__link">Anti Cancer Capsules</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown__link">Anti Cancer Tablets</a>
+                                        <a href="{{ route('actablets') }}" class="dropdown__link">Anti Cancer Tablets</a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="#" class="dropdown__link">Pharmaceutical Injection</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
                         </div>

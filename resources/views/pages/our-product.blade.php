@@ -1,6 +1,10 @@
 @extends('layouts.main')
 
-
+@push('seo')
+    <title>Explore Advanced Oncology, Cardio & Neuro Medicines</title>
+    <meta name="description"
+        content="Browse a diverse range of high-quality drugs and devices in oncology, cardiovascular, and neurology. Trusted solutions for better health outcomes" />
+@endpush
 @section('content')
     <div class="top-banner">
         <img src="{{ asset('banner/products.webp') }}" class="img-fluid"

@@ -3,13 +3,18 @@
 @push('styles')
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css">
 @endpush
+@push('seo')
+    <title>Blog - Soteria Pharmaceuticals</title>
+    <meta name="description"
+        content="Blog - Soteria Pharmaceuticals" />
+@endpush
 @section('content')
     <div class="container py-5">
         <h1 class="display-2 my-5">Blog</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('blog') }}">Blog</a></li>
             </ol>
         </nav>
         <div class="mb-5">

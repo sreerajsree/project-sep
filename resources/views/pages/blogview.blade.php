@@ -3,6 +3,11 @@
 @push('styles')
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css">
 @endpush
+@push('seo')
+    <title>Anti Cancer Capsules</title>
+    <meta name="description"
+        content="Anti Cancer Capsules" />
+@endpush
 @section('content')
     <div class="container py-5">
         <nav aria-label="breadcrumb">

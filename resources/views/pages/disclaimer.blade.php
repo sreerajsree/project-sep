@@ -1,6 +1,10 @@
 @extends('layouts.main')
 
-
+@push('seo')
+    <title>Innovative Healthcare and Pharmaceutical Solutions</title>
+    <meta name="description"
+        content="Providing advanced pharmaceutical products, including anti-cancer capsules, tablets, and injections, with a focus on quality and healthcare excellence" />
+@endpush
 @section('content')
     <div class="py-5">
         <div class="container">

@@ -95,6 +95,15 @@ textarea.form-control {
   font-size: 1.5rem;
 }
 
+.product {
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+      list-style: disc;
+    }
+  }
+}
+
 .float{
   position: fixed;
   z-index: 20000;

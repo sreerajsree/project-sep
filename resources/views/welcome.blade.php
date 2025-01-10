@@ -1,7 +1,11 @@
 @extends('layouts.main')
 
+@push('seo')
+    <title>Soteria Pharmaceuticals</title>
+    <meta name="description" content="Discover Soteria Pharmaceuticals - pioneers in innovative, high-quality pharmaceuticals, prioritizing integrity and customer satisfaction worldwide." />
+@endpush
+
 @section('content')
-    <!-- Coding by CodeWithMangesh || (M.B) -->
 
 
     <div class="pt-5"><img class="img-fluid" src="{{ asset('banner/banner.webp') }}" alt="">

@@ -8,6 +8,7 @@ use App\Models\Blog;
 use App\Models\Gallery;
 use App\Models\Career;
 use App\Models\Press;
+use App\Models\Product;
 use App\Models\Partnership;
 
 class MainController extends Controller
@@ -56,6 +57,25 @@ class MainController extends Controller
     {
         return view('pages.initiatives');
     }
+
+    public function accapsules()
+    {
+        $products = Product::where('category', 'Anti Cancer Capsules')->orderBy('id', 'desc')->get();
+        return view('pages.accapsules', compact('products'));
+    }
+
+    public function actablets()
+    {
+        $products = Product::where('category', 'Anti Cancer Tablets')->orderBy('id', 'desc')->get();
+        return view('pages.actablets', compact('products'));
+    }
+
+    public function viewProduct($slug)
+    {
+        $product = Product::where('slug', $slug)->first();
+        return view('pages.view', compact('product'));
+    }
+
     public function gallery()
     {
         $data = Gallery::orderBy('id', 'desc')->get();

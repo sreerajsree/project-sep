@@ -1,5 +1,9 @@
 @extends('layouts.main')
-
+@push('seo')
+    <title>Soteria Pharmaceuticals - Quality Healthcare Solutions</title>
+    <meta name="description"
+        content="Leading pharmaceutical trader, manufacturer, and exporter from India. Delivering innovative, high-quality healthcare products globally for better accessibility." />
+@endpush
 
 @section('content')
     <div class="top-banner">

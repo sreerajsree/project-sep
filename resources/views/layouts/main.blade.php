@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
     <link rel="icon" href="{{ asset('favicon/favicon.ico') }}">
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
-    <title>Soteria Pharmaceuticals</title>
+    @stack('seo')
 </head>
 
 <body>

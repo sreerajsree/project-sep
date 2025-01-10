@@ -1,5 +1,9 @@
 @extends('layouts.main')
-
+@push('seo')
+    <title>Transforming Healthcare with Innovative Pharma Solutions</title>
+    <meta name="description"
+        content="Pioneering advancements in pharmaceuticals, we deliver high-quality products designed to enhance global healthcare and ensure better patient outcomes" />
+@endpush
 
 @section('content')
     <div class="top-banner">
