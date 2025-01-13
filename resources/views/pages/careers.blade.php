@@ -30,23 +30,23 @@
                         <div class="filter-result">
                             <p class="mb-30 ff-montserrat">Total Job Openings : {{ count($data) }}</p>
 
-                            @for ($i = 0; $i < 5; $i++)
+                            @forelse ($data as $item)
                                 <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
                                     <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
                                         <div class="img-holder me-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">
                                             FD
                                         </div>
                                         <div class="job-content">
-                                            <h5 class="text-center text-md-left h4">Front End Developer</h5>
+                                            <h5 class="text-center text-md-left h4">{{ $item->name }}</h5>
                                             <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
                                                 <li class="me-md-4">
-                                                    <i class="zmdi zmdi-pin mr-2"></i> Los Angeles
+                                                    <i class="zmdi zmdi-pin mr-2"></i> {{  $item->location }}
                                                 </li>
                                                 <li class="me-md-4">
-                                                    <i class="zmdi zmdi-money mr-2"></i> 2500-3500/pm
+                                                    <i class="zmdi zmdi-money mr-2"></i> {{ $item->salary }}
                                                 </li>
                                                 <li class="me-md-4">
-                                                    <i class="zmdi zmdi-time mr-2"></i> Full Time
+                                                    <i class="zmdi zmdi-time mr-2"></i> {{ $item->time }}
                                                 </li>
                                             </ul>
                                         </div>
@@ -56,8 +56,10 @@
                                             now</a>
                                     </div>
                                 </div>
-                            @endfor
-
+                                @empty
+                                <h2>No Jobs found</h2>
+                            @endforelse
+                                
                         </div>
                     </div>
                 </div>
